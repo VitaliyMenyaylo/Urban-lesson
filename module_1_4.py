@@ -10,7 +10,7 @@
 
 my_string = input("Введите строку, для разбора: ")
 #my_string ="From fairest creatures we desire increase,"
-print(my_string)
+print(len(my_string))
 print(my_string.upper())
 print(my_string.lower())
 print(my_string.replace(" ",""))
