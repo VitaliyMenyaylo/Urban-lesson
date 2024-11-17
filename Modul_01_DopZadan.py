@@ -11,3 +11,9 @@ new_grades = [(round(sum(n)/len(n),2)) for n in grades] #получим новы
 Journal = dict(zip(new_student, new_grades)) #Создадим словарь объединяя два списка
 print(Journal)#Выведем полученный словарь содержащий ключ имя ученика и средний балл
 
+#Вариант 2
+
+# Получаем список средних значений
+average_list = list(map(lambda sublist: round(sum(sublist) / len(sublist),2), grades))
+NewJournal = dict(zip(new_student, average_list)) #Создадим словарь объединяя два списка
+print(NewJournal)
