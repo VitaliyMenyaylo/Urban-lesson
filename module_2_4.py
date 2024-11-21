@@ -10,6 +10,7 @@ for i in numbers :
         for j in range(2, i - 1) :
             if i % j == 0 :
                 Primes_number = False
+                break
         if Primes_number :
             primes.append(i)
         else :
